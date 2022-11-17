@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToD</title>
+</head>
+<body>
+<div style="box-sizing:border-box;display:flex;justify-content:center;align-items:center">
+    <h1> Генератор Правды или Действия</h1>
+    <button style="" onclick="sentence()">Refresh<i class="fa fa-refresh" aria-hidden="true"></i></button>
+    <link rel="stylesheet" href="style.css">
+</div>
+<div class="container">
+    <p id="sentence"></p>
+</div>
+<script>
+    var verbs, nouns, adjectives, adverbs, preposition;
+    nouns = ["Сделай Цыганку с кем-то",
+        "Повтори любую позу из йоги",
+        "Поцелуй в щеку кого-то",
+        "Делай звуки стонов 5 секунд",
+        "Набери в рот воды на 40 секунд",
+        "teacher",
+        "old lady",
+        "professor",
+        "hamster",
+        "dog"];
+
+
+    function randGen() {
+        return Math.floor(Math.random() * 5);
+    }
+
+    function sentence() {
+        var rand1 = Math.floor(Math.random() * 10);
+        //                var randCol = [rand1,rand2,rand3,rand4,rand5];
+        //                var i = randGen();
+        var content = nouns[rand1];
+
+        document.getElementById('sentence').innerHTML = "&quot;" + content + "&quot;";
+    };
+    sentence();
+</script>
+
+</body>
+</html>
