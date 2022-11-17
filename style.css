@@ -40,7 +40,7 @@ button {
     justify-content: right;
     outline: none;
     font-famiy: sans-serif;
-    position: relative;
+    position: static;
     padding: 10px;
     width: 120px;
     left: 100vh;
@@ -50,7 +50,7 @@ button {
     color: #1b1b1b;
     transition: 500ms ease-in;
     font-size: 18px;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
 }
 
