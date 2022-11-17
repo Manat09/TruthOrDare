@@ -10,15 +10,18 @@ body {
     background-color: #3FABF2;
     color: whitesmoke;
     position: relative;
+
     /*                margin-top: 10vh;*/
-    height: 70vh;
-    padding-top: 14vh;
+    /*height: 70vh;*/
+    /*padding-top: 14vh;*/
     box-sizing: border-box;
 }
 
 .container p {
     margin-top: 10vh;
-    padding: 5px;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    /*padding: 5px;*/
     line-height: 1.6;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
